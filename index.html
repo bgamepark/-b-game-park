@@ -4,108 +4,107 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>B級ゲームパーク</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f4f1e8;
-      color: #222;
-      text-align: center;
-    }
-
-    header {
-      padding: 24px 12px 12px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    .subtitle {
-      margin: 8px 0 0;
-      color: #555;
-      font-size: 15px;
-    }
-
-    .game-list {
-      width: min(92vw, 520px);
-      margin: 24px auto;
-    }
-
-.game-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 150px;
-  box-sizing: border-box;
-  padding: 18px;
-  margin-bottom: 18px;
-  background: #fffaf0;
-  border: 4px solid #222;
-  border-radius: 18px;
-  box-shadow: 6px 6px 0 #222;
-  color: #222;
-  text-decoration: none;
-  text-align: left;
-}
-
-    .game-title {
-      font-size: 20px;
-      font-weight: 900;
-      margin-bottom: 8px;
-    }
-
-    .game-desc {
-      font-size: 14px;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .tag {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 4px 8px;
-      border: 2px solid #222;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 700;
-      background: #ffd84d;
-    }
-
-    footer {
-      font-size: 12px;
-      color: #666;
-      margin: 28px 0;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>B級ゲームパーク</h1>
-    <p class="subtitle">1分で遊べる、ちょっと変なミニゲーム集。</p>
+  <header class="site-header">
+    <h1 class="site-title">B級ゲームパーク</h1>
+    <p class="site-subtitle">1分で遊べるミニゲーム実験場。気軽に遊べる短時間ゲームを並べています。</p>
   </header>
-
-  <main class="game-list">
-    <a class="game-card" href="games/10sec-stop.html">
-      <div class="game-title">ピタッとストップ！10秒チャレンジ</div>
-      <div class="game-desc">
-        10.00秒にできるだけ近いところでストップするだけの、シンプルなタイミングゲームです。
-      </div>
-      <div class="tag">タイミング</div>
-    </a>
+  <main class="container">
+    <section class="game-grid">
+      <a class="game-card" href="games/10sec-stop.html">
+        <h2 class="game-title">ピタッとストップ！10秒チャレンジ</h2>
+        <p class="game-desc">10.00秒にできるだけ近いところでストップするタイミングゲーム。</p>
+        <span class="tag">タイミング</span>
+      </a>
+      <a class="game-card" href="games/sort-panic.html">
+        <h2 class="game-title">サクサク仕分けパニック</h2>
+        <p class="game-desc">出てきたアイテムを食べものか道具にすばやく仕分けるゲーム。</p>
+        <span class="tag">仕分け</span>
+      </a>
+      <a class="game-card" href="games/red-tap.html">
+        <h2 class="game-title">赤だけタップラッシュ</h2>
+        <p class="game-desc">たくさん並ぶ色の中から、赤いものだけをタップする反射ゲーム。</p>
+        <span class="tag">反射</span>
+      </a>
+      <a class="game-card" href="games/number-order.html">
+        <h2 class="game-title">数字ならべダッシュ</h2>
+        <p class="game-desc">バラバラに並んだ数字を1から順番にタップするスピードゲーム。</p>
+        <span class="tag">順番</span>
+      </a>
+      <a class="game-card" href="games/green-light.html">
+        <h2 class="game-title">青信号リアクション</h2>
+        <p class="game-desc">「GO!」が出た瞬間だけ押す、反応速度チャレンジ。</p>
+        <span class="tag">反応速度</span>
+      </a>
+      <a class="game-card" href="games/light-memory.html">
+        <h2 class="game-title">ひかり順番メモリー</h2>
+        <p class="game-desc">光った順番を覚えて、同じ順番で押す記憶ゲーム。</p>
+        <span class="tag">記憶</span>
+      </a>
+      <a class="game-card" href="games/gauge-stop.html">
+        <h2 class="game-title">ゲージぴったり職人</h2>
+        <p class="game-desc">動くゲージを、中央のあたりゾーンで止めるゲーム。</p>
+        <span class="tag">ゲージ</span>
+      </a>
+      <a class="game-card" href="games/odd-one.html">
+        <h2 class="game-title">ひとつだけ違うやつ</h2>
+        <p class="game-desc">同じものに紛れた、ひとつだけ違う絵文字を見つけるゲーム。</p>
+        <span class="tag">発見</span>
+      </a>
+      <a class="game-card" href="games/math-dash.html">
+        <h2 class="game-title">計算ダッシュ30</h2>
+        <p class="game-desc">30秒でかんたんな計算をどれだけ正解できるか挑戦。</p>
+        <span class="tag">計算</span>
+      </a>
+      <a class="game-card" href="games/big-number.html">
+        <h2 class="game-title">大きい数字どっち？</h2>
+        <p class="game-desc">左右の数字を見て、大きい方をすばやく選ぶゲーム。</p>
+        <span class="tag">比較</span>
+      </a>
+      <a class="game-card" href="games/click-sprint.html">
+        <h2 class="game-title">連打スプリント</h2>
+        <p class="game-desc">10秒間でボタンを何回押せるかを競うシンプルな連打ゲーム。</p>
+        <span class="tag">連打</span>
+      </a>
+      <a class="game-card" href="games/color-trap.html">
+        <h2 class="game-title">色名トラップ</h2>
+        <p class="game-desc">文字の意味ではなく、文字の色を答えるひっかけゲーム。</p>
+        <span class="tag">判断</span>
+      </a>
+      <a class="game-card" href="games/arrow-memory.html">
+        <h2 class="game-title">矢印メモリー</h2>
+        <p class="game-desc">表示された矢印の順番を覚えて、同じ順番で入力するゲーム。</p>
+        <span class="tag">記憶</span>
+      </a>
+      <a class="game-card" href="games/emoji-count.html">
+        <h2 class="game-title">何個ある？カウント</h2>
+        <p class="game-desc">画面に出た目標アイテムの数をすばやく数えて答えるゲーム。</p>
+        <span class="tag">観察</span>
+      </a>
+      <a class="game-card" href="games/onigiri-catch.html">
+        <h2 class="game-title">おにぎりだけ回収</h2>
+        <p class="game-desc">たくさんのアイテムから、おにぎりだけをタップして集めるゲーム。</p>
+        <span class="tag">回収</span>
+      </a>
+      <a class="game-card" href="games/safe-or-danger.html">
+        <h2 class="game-title">セーフ？あぶない？仕分け</h2>
+        <p class="game-desc">出てきたものを、セーフかあぶないかに仕分ける判断ゲーム。</p>
+        <span class="tag">仕分け</span>
+      </a>
+      <a class="game-card" href="games/power-charge.html">
+        <h2 class="game-title">ぴったりパワー注入</h2>
+        <p class="game-desc">パワーを強すぎず弱すぎず、ちょうどよい範囲で止めるゲーム。</p>
+        <span class="tag">ゲージ</span>
+      </a>
+      <a class="game-card" href="games/five-sec-stop.html">
+        <h2 class="game-title">5秒ぴったりミニ</h2>
+        <p class="game-desc">5.00秒にできるだけ近いところでストップする短時間チャレンジ。</p>
+        <span class="tag">タイミング</span>
+      </a>
+    </section>
   </main>
-    <a class="game-card" href="games/sort-panic.html">
-      <div class="game-title">サクサク仕分けパニック</div>
-      <div class="game-desc">
-        出てきたアイテムを「食べもの」か「道具」にすばやく仕分ける、判断スピード系ミニゲームです。
-      </div>
-      <div class="tag">仕分け</div>
-    </a>
-
-  
-  <footer>
-    B級ゲームパーク｜実験中
-  </footer>
+  <footer class="site-footer">B級ゲームパーク｜実験中</footer>
 </body>
 </html>
