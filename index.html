@@ -7,104 +7,226 @@
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="site-title">B級ゲームパーク</h1>
-    <p class="site-subtitle">1分で遊べるミニゲーム実験場。気軽に遊べる短時間ゲームを並べています。</p>
+  <header class="portal-topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">🎮</span>
+      <span class="brand-text">B級ゲームパーク</span>
+    </a>
+    <nav class="portal-nav" aria-label="サイト内メニュー">
+      <a href="#featured">おすすめ</a>
+      <a href="#all-games">すべてのゲーム</a>
+      <a href="#about">遊び方</a>
+    </nav>
   </header>
-  <main class="container">
-    <section class="game-grid">
-      <a class="game-card" href="games/10sec-stop.html">
-        <h2 class="game-title">ピタッとストップ！10秒チャレンジ</h2>
-        <p class="game-desc">10.00秒にできるだけ近いところでストップするタイミングゲーム。</p>
-        <span class="tag">タイミング</span>
-      </a>
-      <a class="game-card" href="games/sort-panic.html">
-        <h2 class="game-title">サクサク仕分けパニック</h2>
-        <p class="game-desc">出てきたアイテムを食べものか道具にすばやく仕分けるゲーム。</p>
-        <span class="tag">仕分け</span>
-      </a>
-      <a class="game-card" href="games/red-tap.html">
-        <h2 class="game-title">赤だけタップラッシュ</h2>
-        <p class="game-desc">たくさん並ぶ色の中から、赤いものだけをタップする反射ゲーム。</p>
-        <span class="tag">反射</span>
-      </a>
-      <a class="game-card" href="games/number-order.html">
-        <h2 class="game-title">数字ならべダッシュ</h2>
-        <p class="game-desc">バラバラに並んだ数字を1から順番にタップするスピードゲーム。</p>
-        <span class="tag">順番</span>
-      </a>
-      <a class="game-card" href="games/green-light.html">
-        <h2 class="game-title">青信号リアクション</h2>
-        <p class="game-desc">「GO!」が出た瞬間だけ押す、反応速度チャレンジ。</p>
-        <span class="tag">反応速度</span>
-      </a>
-      <a class="game-card" href="games/light-memory.html">
-        <h2 class="game-title">ひかり順番メモリー</h2>
-        <p class="game-desc">光った順番を覚えて、同じ順番で押す記憶ゲーム。</p>
-        <span class="tag">記憶</span>
-      </a>
-      <a class="game-card" href="games/gauge-stop.html">
-        <h2 class="game-title">ゲージぴったり職人</h2>
-        <p class="game-desc">動くゲージを、中央のあたりゾーンで止めるゲーム。</p>
-        <span class="tag">ゲージ</span>
-      </a>
-      <a class="game-card" href="games/odd-one.html">
-        <h2 class="game-title">ひとつだけ違うやつ</h2>
-        <p class="game-desc">同じものに紛れた、ひとつだけ違う絵文字を見つけるゲーム。</p>
-        <span class="tag">発見</span>
-      </a>
-      <a class="game-card" href="games/math-dash.html">
-        <h2 class="game-title">計算ダッシュ30</h2>
-        <p class="game-desc">30秒でかんたんな計算をどれだけ正解できるか挑戦。</p>
-        <span class="tag">計算</span>
-      </a>
-      <a class="game-card" href="games/big-number.html">
-        <h2 class="game-title">大きい数字どっち？</h2>
-        <p class="game-desc">左右の数字を見て、大きい方をすばやく選ぶゲーム。</p>
-        <span class="tag">比較</span>
-      </a>
-      <a class="game-card" href="games/click-sprint.html">
-        <h2 class="game-title">連打スプリント</h2>
-        <p class="game-desc">10秒間でボタンを何回押せるかを競うシンプルな連打ゲーム。</p>
-        <span class="tag">連打</span>
-      </a>
-      <a class="game-card" href="games/color-trap.html">
-        <h2 class="game-title">色名トラップ</h2>
-        <p class="game-desc">文字の意味ではなく、文字の色を答えるひっかけゲーム。</p>
-        <span class="tag">判断</span>
-      </a>
-      <a class="game-card" href="games/arrow-memory.html">
-        <h2 class="game-title">矢印メモリー</h2>
-        <p class="game-desc">表示された矢印の順番を覚えて、同じ順番で入力するゲーム。</p>
-        <span class="tag">記憶</span>
-      </a>
-      <a class="game-card" href="games/emoji-count.html">
-        <h2 class="game-title">何個ある？カウント</h2>
-        <p class="game-desc">画面に出た目標アイテムの数をすばやく数えて答えるゲーム。</p>
-        <span class="tag">観察</span>
-      </a>
-      <a class="game-card" href="games/onigiri-catch.html">
-        <h2 class="game-title">おにぎりだけ回収</h2>
-        <p class="game-desc">たくさんのアイテムから、おにぎりだけをタップして集めるゲーム。</p>
-        <span class="tag">回収</span>
-      </a>
-      <a class="game-card" href="games/safe-or-danger.html">
-        <h2 class="game-title">セーフ？あぶない？仕分け</h2>
-        <p class="game-desc">出てきたものを、セーフかあぶないかに仕分ける判断ゲーム。</p>
-        <span class="tag">仕分け</span>
-      </a>
-      <a class="game-card" href="games/power-charge.html">
-        <h2 class="game-title">ぴったりパワー注入</h2>
-        <p class="game-desc">パワーを強すぎず弱すぎず、ちょうどよい範囲で止めるゲーム。</p>
-        <span class="tag">ゲージ</span>
-      </a>
-      <a class="game-card" href="games/five-sec-stop.html">
-        <h2 class="game-title">5秒ぴったりミニ</h2>
-        <p class="game-desc">5.00秒にできるだけ近いところでストップする短時間チャレンジ。</p>
-        <span class="tag">タイミング</span>
-      </a>
+
+  <main class="portal-main">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <span class="eyebrow">1分で遊べるミニゲーム実験場</span>
+        <h1 class="hero-title">B級ゲームパーク</h1>
+        <p class="hero-text">
+          ちょっと変で、すぐ遊べて、もう1回押したくなる。
+          スキマ時間にちょうどいい1分ゲームを集めた、気軽なミニゲーム広場です。
+        </p>
+        <div class="hero-buttons">
+          <a class="cta-button primary" href="#featured">おすすめを見る</a>
+          <button class="cta-button secondary" id="randomPlayButton" type="button">ランダムで遊ぶ</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/images/hero-banner.png" alt="B級ゲームパークのメインビジュアル" />
+      </div>
+    </section>
+
+    <section class="chip-row" aria-label="ゲームジャンル">
+      <span class="chip active">すべて</span>
+      <span class="chip">タイミング</span>
+      <span class="chip">仕分け</span>
+      <span class="chip">反射</span>
+      <span class="chip">記憶</span>
+      <span class="chip">比較</span>
+      <span class="chip">観察</span>
+      <span class="chip">計算</span>
+    </section>
+
+    <section id="featured" class="section-block">
+      <div class="section-head">
+        <div>
+          <p class="section-label">PICK UP</p>
+          <h2 class="section-title">おすすめのゲーム</h2>
+        </div>
+        <p class="section-note">まず遊ぶならこのあたりがおすすめです。</p>
+      </div>
+
+      <div class="featured-grid">
+        <a class="featured-card" href="games/10sec-stop.html">
+          <div class="featured-thumb image-thumb">
+            <img src="assets/images/10sec-stop-thumb.png" alt="ピタッとストップ！10秒チャレンジのサムネイル" />
+          </div>
+          <div class="featured-body">
+            <div class="featured-meta">
+              <span class="mini-tag yellow">タイミング</span>
+              <span class="play-time">約10秒〜</span>
+            </div>
+            <h3>ピタッとストップ！10秒チャレンジ</h3>
+            <p>10.00秒ちょうどを狙って止める、シンプルで気持ちいい定番チャレンジ。</p>
+          </div>
+        </a>
+
+        <a class="featured-card" href="games/sort-panic.html">
+          <div class="featured-thumb image-thumb">
+            <img src="assets/images/sort-panic-thumb.png" alt="サクサク仕分けパニックのサムネイル" />
+          </div>
+          <div class="featured-body">
+            <div class="featured-meta">
+              <span class="mini-tag green">仕分け</span>
+              <span class="play-time">約30秒</span>
+            </div>
+            <h3>サクサク仕分けパニック</h3>
+            <p>出てきたアイテムを、食べものか道具にすばやく仕分ける反応ゲーム。</p>
+          </div>
+        </a>
+
+        <a class="featured-card" href="games/number-order.html">
+          <div class="featured-thumb emoji-thumb sky">
+            <div class="emoji-art">1 2 3</div>
+          </div>
+          <div class="featured-body">
+            <div class="featured-meta">
+              <span class="mini-tag blue">順番</span>
+              <span class="play-time">約30秒</span>
+            </div>
+            <h3>数字ならべダッシュ</h3>
+            <p>数字を1から順番に押していく、わかりやすくてテンポの良いスピードゲーム。</p>
+          </div>
+        </a>
+
+        <a class="featured-card" href="games/light-memory.html">
+          <div class="featured-thumb emoji-thumb violet">
+            <div class="emoji-art">🔴 🔵<br>🟡 🟢</div>
+          </div>
+          <div class="featured-body">
+            <div class="featured-meta">
+              <span class="mini-tag purple">記憶</span>
+              <span class="play-time">約40秒</span>
+            </div>
+            <h3>ひかり順番メモリー</h3>
+            <p>光った順番を覚えてそのまま押す、ちょっと脳トレ気分の記憶ゲーム。</p>
+          </div>
+        </a>
+
+        <a class="featured-card" href="games/click-sprint.html">
+          <div class="featured-thumb emoji-thumb orange">
+            <div class="emoji-art">👆💨</div>
+          </div>
+          <div class="featured-body">
+            <div class="featured-meta">
+              <span class="mini-tag orange">連打</span>
+              <span class="play-time">約10秒</span>
+            </div>
+            <h3>連打スプリント</h3>
+            <p>10秒間でどれだけ押せるかを競う、説明不要で盛り上がりやすい連打ゲーム。</p>
+          </div>
+        </a>
+
+        <a class="featured-card" href="games/odd-one.html">
+          <div class="featured-thumb emoji-thumb mint">
+            <div class="emoji-art">😀 😀 😀<br>😀 😳 😀</div>
+          </div>
+          <div class="featured-body">
+            <div class="featured-meta">
+              <span class="mini-tag teal">観察</span>
+              <span class="play-time">約30秒</span>
+            </div>
+            <h3>ひとつだけ違うやつ</h3>
+            <p>同じものの中にまぎれた1つだけ違うやつを見つける、直感系さがしゲーム。</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="all-games" class="section-block">
+      <div class="section-head compact">
+        <div>
+          <p class="section-label">ALL GAMES</p>
+          <h2 class="section-title">すべてのゲーム</h2>
+        </div>
+        <p class="section-note">全18本。気になるものから気軽にどうぞ。</p>
+      </div>
+      <div class="game-grid deluxe" id="gameGrid"></div>
+    </section>
+
+    <section id="about" class="guide-panel">
+      <div class="guide-item">
+        <div class="guide-icon">⏱️</div>
+        <h3>1分で遊べる</h3>
+        <p>どのゲームも短時間で終わるので、スキマ時間に試しやすい作りです。</p>
+      </div>
+      <div class="guide-item">
+        <div class="guide-icon">📱</div>
+        <h3>スマホ向け</h3>
+        <p>なるべくスマホでも遊びやすい配置にしています。まずはタップで気軽にどうぞ。</p>
+      </div>
+      <div class="guide-item">
+        <div class="guide-icon">🧪</div>
+        <h3>実験中の遊び場</h3>
+        <p>まだ育て途中のゲームパークです。面白い型を見つけながら少しずつ更新していきます。</p>
+      </div>
     </section>
   </main>
-  <footer class="site-footer">B級ゲームパーク｜実験中</footer>
+
+  <footer class="site-footer" id="footerNote">
+    <p>すべてのゲームは、1プレイ約1分でサクッと遊べます。ちょっとしたスキマ時間に、ぜひ遊んでみてください！</p>
+  </footer>
+
+  <script src="assets/games-data.js"></script>
+  <script>
+    const games = window.GAMES || [];
+    const featuredIds = new Set(["10sec-stop","sort-panic","number-order","light-memory","click-sprint","odd-one"]);
+    const colorClasses = ["blue","green","purple","yellow","pink","teal","orange"];
+    const iconMap = {
+      "タイミング":"⏱️",
+      "仕分け":"🧺",
+      "反射":"⚡",
+      "順番":"🔢",
+      "反応速度":"🚦",
+      "記憶":"🧠",
+      "ゲージ":"🎯",
+      "発見":"🔎",
+      "計算":"➕",
+      "比較":"↔️",
+      "連打":"👆",
+      "判断":"🤔",
+      "観察":"👀",
+      "回収":"🍙"
+    };
+
+    const grid = document.getElementById('gameGrid');
+    grid.innerHTML = games.map((game, i) => {
+      const colorClass = colorClasses[i % colorClasses.length];
+      const icon = iconMap[game.tag] || '🎮';
+      const isFeatured = featuredIds.has(game.id);
+      return `
+        <a class="game-card deluxe-card ${isFeatured ? 'is-featured-link' : ''}" href="games/${game.id}.html">
+          <div class="card-badge ${colorClass}">${icon}</div>
+          <div class="card-texts">
+            <h3 class="game-title">${game.title}</h3>
+            <p class="game-desc">${game.desc}</p>
+            <div class="card-bottom-row">
+              <span class="tag ${colorClass}">${game.tag}</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      `;
+    }).join('');
+
+    const randomButton = document.getElementById('randomPlayButton');
+    randomButton.addEventListener('click', () => {
+      if (!games.length) return;
+      const picked = games[Math.floor(Math.random() * games.length)];
+      location.href = `games/${picked.id}.html`;
+    });
+  </script>
 </body>
 </html>
